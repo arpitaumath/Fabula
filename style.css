@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hind", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    padding-bottom: 0px;
+    background-image: url(./img/roasted-coffee-beans-falling-down-260nw-219080287-removebg-preview.png);
+    background-position: center;
+    background-color:rgba(36, 11, 13, 0.729);
+    /* background-position:center ; */
+    /* background-size: cover; */
+    
+    
+   
+}
+.navbar{
+    width:95%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(216, 209, 209);
+    
+}
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.left i{
+    display: none;
+}
+.left ul{
+    display: flex;
+   justify-content: center;
+  
+}
+.left ul li{
+    list-style: none;
+    color: rgb(53, 51, 51);
+    margin-inline: 20px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right img{
+    width: 30px;
+    height: 30px;
+}
+.right span{
+    width: 20%;
+    
+}
+.right span i{
+    margin-inline: 5px;
+    font-size: 20px;
+    color: gray;
+}
+.textarea{
+    width: 95%;
+    height: 60vh;
+    display: flex;
+    background-color: white;
+}
+.textpart{
+    width: 50%;
+    height: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+.textpart i{
+    color: rgb(52, 7, 7);
+  
+  
+}
+#heading1{
+    font-size: 30px;
+   font-weight: 800;
+   color: rgb(118, 41, 56);
+}
+#heading2{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(141, 141, 83);
+}
+.textpart p{
+    color: gray;
+        font-size: 15px;
+}
+
+.textpart span{
+    padding-block: 30px;
+}
+.textpart span button{
+    width: 120px;
+    height:50px;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    color: rgb(97, 35, 57);
+}
+.textarea span a{
+    font-size: 15px;
+    color: rgb(90, 33, 60);
+}
+.img-sec{
+    width: 50%;
+    height: 100%;
+    /* background-color: brown; */
+    /* background-image: url(./img/roasted-coffee-beans-falling-down-260nw-219080287-removebg-preview.png);
+    opacity: 0.9; */
+   
+}
+.img-sec img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    
+}
+.lastpart{
+    width: 95%;
+    height: 17vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.lastpart img{
+    width: 200px;
+    height:100%;
+}
+.lleft{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.lleft span{
+    line-height: 10px;
+}
+.lleft span h6{
+    font-size: 12px;
+    color: orange;
+}
+.lleft span h5{
+    font-size: 15px;
+    color: rgb(82, 24, 36);
+}
+.lleft  hr
+{
+    height: 50px;
+
+}
+.lright{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.lright span{
+    line-height: 10px;
+    color: rgb(99, 34, 50);
+}
+.lright em{
+    color: orange;
+}
+.lright span i{
+    color :rgb(204, 204, 137);
+    /* margin-bottom: 10px; */
+    /* padding-bottom: 20px; */
+}
+.lright h6{
+    font-size: 12px;
+    line-height: 10px;
+}
+#lastimg{
+    width: 150px;
+    height: 250px;
+    position: absolute    ;
+    right: 3px;
+    bottom: 0px;
+}
+
+
+
+
+/* responsive 768px */
+
+@media (max-width:768px) {
+    .main-cointainer{
+        width: 100%;
+        height: 100vh;
+        
+    }
+    .navbar{
+       width: 100%;
+       height: 20vh;
+       font-size: 15px;
+    }
+    .left{
+        width: 60%;
+        font-size: 10px;
+    }
+    .left ul li{
+        margin-inline: 10px;
+    }
+    .right{
+        /* display: flex; */
+        justify-content: end;
+        padding-right: 20px;
+    }
+    .right span {
+        display: none;
+    
+    }
+    .textarea{
+        width: 100%;
+        height: 60vh;
+        /* padding: 0; */
+        
+    }
+    
+    .textpart{
+        padding-left: 20px;
+        width: 50%;
+        height: 100%;
+    }
+    .textpart h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .textpart p{
+        font-size: 10px;
+    }
+    
+    .textpart br{
+        display: none;
+    }
+    .textpart span{
+    
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .textpart span button{
+        width: 80px;
+        height: 30px;
+
+    }
+    .textpart span a{
+        line-height: 0; 
+        font-size: 12px;
+    }
+    .lastpart{
+        width: 100%;
+        height: 20vh;
+    }
+    #lastimg{
+        display: none;
+    }
+    /* .lastpart{
+        height: 15vh;
+    } */
+    .lleft{
+        width: 50%;
+        padding-left: 30px;
+    }
+    .lright{
+        display: none;
+    }
+}
+
+
+/* Responsive 480px */
+@media (max-width:480px){
+ .navbar {height: 15vh;}
+ .left ul{
+    display: none;
+ }
+ .left i{
+    width: 100px;
+    height:100px;
+    display: flex;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+ }
+ .textpart{
+    width: 100%;
+    padding-inline: 20px;
+ }
+ .img-sec{
+    display: none;
+ }
+ .lleft{
+    width: 100%;
+ }
+ .lastpart img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 80px;
+    left: 180px;
+
+ }
+}
